@@ -1,0 +1,24 @@
+{
+	"schemaVersion": 1,
+	"id": "packblocker",
+	"version": "${version}",
+	"name": "Pack Blocker",
+	"description": "blocks server forced resource packs without loading them. the server is told the pack loaded, so you are not kicked.",
+	"authors": ["wysss"],
+	"contributors": ["Truefuly (original idea)"],
+	"contact": {"sources": "https://github.com/realwysss/Pack-Blocker"},
+	"license": "All-Rights-Reserved",
+	"icon": "assets/packblocker/icon.png",
+	"environment": "client",
+	"mixins": [
+		{
+			"config": "packblocker.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": ">=26.1 <26.3",
+		"java": ">=25"
+	}
+}
